@@ -31,7 +31,7 @@
       </div>
   </div>
   <p class="copy"><a>© 2018 XXXXXX</a></p>
-  <p class="des">由于github无法挂载动态网站，数据请求可能会失败，详见<a href="https://github.com/wwilll/my-first-fullstack" style="color:yellow">演示截图</a><br>本登录测试demo使用技术为：vuejs+axios+node+express+mongodb
+  <p class="des">由于github无法挂载动态网站，数据请求可能会失败，详见<a href="https://github.com/wwilll/my-first-fullstack/blob/master/README.md" style="color:yellow">演示截图</a><br>本登录测试demo使用技术为：vuejs+axios+node+express+mongodb
   主要展示了一个B/S结构的系统运行的大致流程具体思路为：登录模块基础逻辑检测并向后台请求数据，收到响应数据后存储至localstorage，
   刷新不丢失数据，退出可清除本地用户数据</p>
 <!-- <input class="form-control" placeholder="请输入账号" v-model="account">
