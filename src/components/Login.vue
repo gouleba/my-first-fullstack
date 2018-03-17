@@ -1,7 +1,7 @@
 <template>
 <div class="login">
   <div class="top-login">
-			<span><img src="../../static/images/group.png" alt=""/></span>
+			<span><img src="../../static/img/group.png" alt=""/></span>
 	</div>
 	<h1 v-text="title"></h1>
   <p class="rutrueInfo">{{rutrueInfo}}</p>
@@ -103,6 +103,7 @@ export default {
               this.account=''
             }else{}
           }).catch((error) => {
+            alert('找不到服务器或服务器未启动');
             console.log(error);
           });
         }else{
@@ -149,6 +150,9 @@ export default {
             this.rutrueInfo='用户名或密码错误或无此人'
           }else{}
         }).catch((error) => {
+          alert('找不到服务器或服务器未启动');
+          this.account=''
+          this.password=''
           console.log(error);
         });
       }else{
@@ -160,11 +164,7 @@ export default {
 </script>
 
 <style>
-body{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 100%;
-  background: url(../../static/images/bbb.jpg) center center/100% 100% no-repeat;
-}
+
 .mr20{margin-right: 20px}
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #999;
@@ -233,14 +233,14 @@ body{
   flex-wrap: nowrap;
 }
 .login-ic i {
-    background: url(../../static/images/m.png)no-repeat 6px 6px;
+    background: url('../../static/img/m.png')no-repeat 6px 6px;
     width: 38px;
     height: 38px;
 	/*-- agileits --*/
     display: inline-block;
 }
 .login-ic i.icon {
-    background: url(../../static/images/l.png)no-repeat 6px 6px;  
+    background: url('../../static/img/l.png')no-repeat 6px 6px;  
 }
 .login-ic input[type="text"],.login-ic  input[type="password"] {
     background: none;

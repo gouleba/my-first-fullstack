@@ -101,8 +101,19 @@ export default {
 
 <style>
 *{margin: 0;padding: 0;}
-html,body,#app{width: 100%;height:auto;min-height: 100%;}
+html,body{width: 100%;min-height:100%;}
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  background: url('../static/img/bbb.jpg') center center/100% 100% no-repeat;
+}
+body:before{
+  content: '';
+  display: table;
+}
 #app {
+  width: 100%;
+  min-height: 100%;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
