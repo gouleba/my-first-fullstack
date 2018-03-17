@@ -1,7 +1,7 @@
 <template>
 <div class="login">
   <div class="top-login">
-			<span><img src="/static/images/group.png" alt=""/></span>
+			<span><img src="../../static/images/group.png" alt=""/></span>
 	</div>
 	<h1 v-text="title"></h1>
   <p class="rutrueInfo">{{rutrueInfo}}</p>
@@ -163,7 +163,7 @@ export default {
 body{
   font-family: 'Montserrat', sans-serif;
   font-size: 100%;
-  background: url(/static/images/bbb.jpg) center center/100% 100% no-repeat;
+  background: url(../../static/images/bbb.jpg) center center/100% 100% no-repeat;
 }
 .mr20{margin-right: 20px}
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -233,14 +233,14 @@ body{
   flex-wrap: nowrap;
 }
 .login-ic i {
-    background: url(/static/images/m.png)no-repeat 6px 6px;
+    background: url(../../static/images/m.png)no-repeat 6px 6px;
     width: 38px;
     height: 38px;
 	/*-- agileits --*/
     display: inline-block;
 }
 .login-ic i.icon {
-    background: url(/static/images/l.png)no-repeat 6px 6px;  
+    background: url(../../static/images/l.png)no-repeat 6px 6px;  
 }
 .login-ic input[type="text"],.login-ic  input[type="password"] {
     background: none;
