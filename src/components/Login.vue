@@ -203,7 +203,7 @@ export default {
   margin: 20.5px; 
 }
 .login h1{
-  margin: 10px 0;
+  margin: 5px 0;
   color: white;
 }
 .login-top{
@@ -221,24 +221,24 @@ export default {
   border-radius: 10px;
 }
 .login-ic i {
-    background: url('../../static/img/m.png')no-repeat 6px 6px;
-    width: 38px;
-    height: 38px;
+    background: url('../../static/img/m.png')no-repeat 6px 6px/20px 20px;
+    width: 32px;
+    height: 32px;
     display: inline-block;
 }
 .login-ic i.icon {
-    background: url('../../static/img/l.png')no-repeat 6px 6px;  
+    background: url('../../static/img/l.png')no-repeat 6px 6px/20px 20px;  
 }
 .login-ic input[type="text"],.login-ic  input[type="password"] {
     background: none;
     outline: none;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     color: #fff;
-    padding: 8px 16px;
+    padding: 5px 10px;
     border: none;
     border-left: 1px solid #fff;
-    width: auto;
+    width: 70%;
     display: inline-block;
     margin-left: 7px;
 }
