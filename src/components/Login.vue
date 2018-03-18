@@ -31,15 +31,9 @@
       </div>
   </div>
   <p class="copy"><a>© 2018 XXXXXX</a></p>
-  <p class="des">由于github无法挂载动态网站，数据请求可能会失败，详见<a href="https://github.com/wwilll/my-first-fullstack/blob/master/README.md" style="color:yellow">演示截图</a><br>本登录测试demo使用技术为：vuejs+axios+node+express+mongodb
-  主要展示了一个B/S结构的系统运行的大致流程具体思路为：登录模块基础逻辑检测并向后台请求数据，收到响应数据后存储至localstorage，
+  <p class="des">由于github无法挂载动态网站，数据请求会失败，详见<a href="https://github.com/wwilll/my-first-fullstack/blob/master/README.md" style="color:yellow">演示截图</a><br>本登录测试demo使用技术为：<br>vuejs+axios+node+express+mongodb
+  主要展示了一个B/S结构的系统运行的大致流程<br>具体思路为：登录模块基础逻辑检测并向后台请求数据，收到响应数据后存储至localstorage，
   刷新不丢失数据，退出可清除本地用户数据</p>
-<!-- <input class="form-control" placeholder="请输入账号" v-model="account">
-<input class="form-control" placeholder="请输入姓名" v-if="showName" v-model="name">
-<input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码" v-model="password"><br>
-<button type="submit" class="btn btn-default" @click="reg" v-text="regOrSub"></button>
-<button type="submit" class="btn btn-default" @click="login">登录</button>
-<p>{{rutrueInfo}}</p> -->
 </div>
 </template>
 
@@ -164,7 +158,6 @@ export default {
 </script>
 
 <style>
-
 .mr20{margin-right: 20px}
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #999;
@@ -184,12 +177,7 @@ export default {
     height: 130px;
     display: block;
     position: relative;
-    /* left:50%; */
     margin: 0 auto;
-    /* -webkit-transform: rotate(45deg);
-    transform-origin: -65px 0; */
-    /* margin: 0 auto 4em; */
-    /* background: #fff; */
     text-align: center;
 }
 .top-login span{
@@ -201,42 +189,41 @@ export default {
     position: absolute;
     top: 11px;
     left: 11px;
+    border-radius: 50%;
 }
 .top-login span img{
   display: block;
   width: 64px;
   height: 64px;
-    /* -webkit-transform: rotate(-45deg) translate3d(0, 0, 0);
-    -moz-transform: rotate(-45deg) translate3d(0, 0, 0);
-    -ms-transform: rotate(-45deg) translate3d(0, 0, 0);
-    -o-transform: rotate(-45deg) translate3d(0, 0, 0);
-    transform: rotate(-45deg) translate3d(0, 0, 0); */
+  /* -webkit-transform: rotate(-45deg) translate3d(0, 0, 0);
+  -moz-transform: rotate(-45deg) translate3d(0, 0, 0);
+  -ms-transform: rotate(-45deg) translate3d(0, 0, 0);
+  -o-transform: rotate(-45deg) translate3d(0, 0, 0);
+  transform: rotate(-45deg) translate3d(0, 0, 0); */
   margin: 20.5px; 
 }
 .login h1{
-  margin: 20px 0;
+  margin: 10px 0;
   color: white;
 }
-/*----*/
 .login-top{
-	width: 90%;
+	width: 80%;
   display: block;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 5px auto;
 }
 .login-ic {
   background: rgba(255, 255, 255, 0.32); 
-	margin-bottom:1.5em;
-  padding: 8px;	
+	margin-bottom:0.7em;
+  padding: 4px 8px;	
   display: -webkit-flex; /* Safari */
   display: flex;
   flex-wrap: nowrap;
+  border-radius: 10px;
 }
 .login-ic i {
     background: url('../../static/img/m.png')no-repeat 6px 6px;
     width: 38px;
     height: 38px;
-	/*-- agileits --*/
     display: inline-block;
 }
 .login-ic i.icon {
@@ -245,13 +232,13 @@ export default {
 .login-ic input[type="text"],.login-ic  input[type="password"] {
     background: none;
     outline: none;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     color: #fff;
-    padding: 10px 16px;
+    padding: 8px 16px;
     border: none;
     border-left: 1px solid #fff;
-    width: 80%;
+    width: auto;
     display: inline-block;
     margin-left: 7px;
 }
@@ -266,8 +253,9 @@ export default {
 .log-bwn input[type="submit"] {
   font-size: 15px;
   font-weight: 700;
+  border-radius: 10px;
   color: #fff;
-  padding: 13px 0;
+  padding: 8px 0;
   background: #ff3366;
   display: inline-block;
   flex-grow:1;
@@ -286,80 +274,27 @@ export default {
 }
 .login p{
   color: white;
-  margin-top: 20px;
-}
-.login p.copy a{
-	color:#fff;
-	text-decoration:none;
 }
 .login p.copy{
   font-size: 20px;
-  /* word-wrap:break-word;  
-  word-break:break-all;   */
+  margin-top: 20px;
+}
+.login p.copy a{
+  margin-top: 20px;
+	color:#fff;
+	text-decoration:none;
 }
 .login p.copy a:hover{
 	text-decoration:underline;
 }
 .login .rutrueInfo{
   color: red;
-  font-size: 30px;
+  font-size: 25px;
 }
 .login p.des{
-  padding: 0 5%;
+  padding: 0 10%;
   text-align: left;
   font-style: italic;
-  line-height: 30px;
-  /* text-indent: -2em;
-  padding-left: 2em; */
+  line-height: 25px;
 }
-/* @media (max-width:600px){
-.login-top {
-    width: 425px;
-}
-p.copy {
-  font-size: 0.9em;
-	padding:0 0.5em;
-	line-height: 1.8em;
-}
-.top-login {
-    width: 90px;
-    height:90px;
-    margin: 0 auto 3em;
-}
-.login-ic input[type="text"], .login-ic input[type="password"] {
-    width: 100%;
-}
-.top-login span img {
-    margin: 5px 0 0 5px;
-}
-.top-login span {
-    width: 75px;
-    height: 75px;
-    top: 5px;
-    left: 5px;
-}
-.login-form h1 {
-    margin-bottom: 1em;
-    font-size: 1.7em;
-}
-p.copy {
-    margin-top: 3em;
-}
-.login-form {
-    padding: 80px 0px 45px 0px;
-}
-.login-ic {
-    margin-bottom: 1em;
-    padding: 3px;
-}
-.log-bwn input[type="submit"] {
-    padding: 10px 0;
-}
-p.copy {
-    font-size: 0.8em;
-}
-body {
-    min-height: 672px;
-}
-} */
 </style>
